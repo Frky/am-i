@@ -55,3 +55,9 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Settings 
+ami/ami/settings/local.py
+
+# DB
+ami/ami/db/*.sqlite3

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block bodyclass %}
+    {% if ami %}
+        yes
+    {% else %}
+        no
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {{ ami }}
+{% endblock %}
+
+{% block additional_script %}
+    {% if user.username == "_Frky" %}
+        setInterval(function() {
+            $.ajax("{% url 'ping' %}");
+        }, 3000);
+    {% endif %}
+{% endblock %}

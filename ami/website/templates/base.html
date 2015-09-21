@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>
+            Am I watching rugby ?
+        </title>
+
+        {% load staticfiles %}
+        <script src="{% static 'ami/js/lib/jquery-1.11.3.min.js' %}"></script>
+
+    </head>
+
+    <body class="{% block bodyclass %}{% endblock %}">
+        <header>
+        </header>
+
+        <section>
+            {% block content %}{% endblock %}
+        </section>
+
+        <footer>
+        </footer>
+
+        <script>
+            {% block additional_script %}
+            {% endblock %}
+        </script>
+    </body>
+</html>
